@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 04/02/2021
+-   Remove `Hero` widgets.
+-   Add internalization (`en` and `es`).
+
 ## 03/02/2021
 -   Add `loader` page.
 -   Add navigation between login and register.
