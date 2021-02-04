@@ -1,4 +1,4 @@
-package com.example.nextchat
+package org.nextchat.mobile
 
 import io.flutter.embedding.android.FlutterActivity
 
