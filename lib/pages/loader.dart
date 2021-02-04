@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:nextchat/pages/login.dart';
 import 'package:nextchat/widgets/nextchat.dart';
 
@@ -27,7 +28,7 @@ class _LoaderPageState extends State<LoaderPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
           NextChat(size: 48.0, margin: EdgeInsets.only(bottom: 2.0)),
-          Text('¡Conecta con alguien al instante!',
+          Text(AppLocalizations.of(context).loader_message,
               style: TextStyle(color: Colors.grey, fontSize: 12.0))
         ]));
   }

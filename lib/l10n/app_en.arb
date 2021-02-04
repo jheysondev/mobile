@@ -1,0 +1,17 @@
+{
+    "loader_message": "Connect with someone instantly!",
+
+    "form_username": "Username",
+    "form_password": "Password",
+
+    "login_top_button": "Sign up",
+    "login_forgot_account": "Did you forget your password?",
+    "login_submit": "Sign in",
+
+    "register_top_button": "Sign in",
+    "register_repeat_password": "Repeat the password",
+    "register_captcha": "Captcha: How much is 2 + 2?",
+    "register_submit": "Sign up",
+
+    "footer": "© NexChat 2021 ~ All rights reserved"
+}

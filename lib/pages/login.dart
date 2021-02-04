@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:nextchat/pages/register.dart';
 import 'package:nextchat/widgets/nextchat.dart';
 import 'package:nextchat/widgets/chat_input.dart';
@@ -27,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
                   tag: 'top_button',
                   child: ChatButton(
                     type: ChatButtonType.text,
-                    text: 'Regístrate',
+                    text: AppLocalizations.of(context).login_top_button,
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (_) {
                         return RegisterPage();
@@ -49,22 +50,22 @@ class _LoginPageState extends State<LoginPage> {
                       child: NextChat(
                           size: 48.0, margin: EdgeInsets.only(bottom: 32.0))),
                   ChatInput(
-                      text: 'Nombre de usuario',
+                      text: AppLocalizations.of(context).form_username,
                       margin: EdgeInsets.only(bottom: 16.0)),
                   ChatInput(
                       type: ChatInputType.password,
-                      text: 'Contraseña',
+                      text: AppLocalizations.of(context).form_password,
                       margin: EdgeInsets.only(bottom: 8.0)),
                   ChatButton(
                       type: ChatButtonType.text,
-                      text: '¿Olvidaste tu contraseña?',
+                      text: AppLocalizations.of(context).login_forgot_account,
                       onPressed: () {},
                       style: TextStyle(fontSize: 12.0)),
                   Hero(
                       tag: 'submit_button',
                       child: ChatButton(
                           type: ChatButtonType.primary,
-                          text: 'Ingresar',
+                          text: AppLocalizations.of(context).login_submit,
                           onPressed: () {},
                           margin: EdgeInsets.only(top: 16.0)))
                 ],
@@ -72,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Hero(
                 tag: 'footer',
-                child: Text('© NexChat 2021 ~ Todos los derechos reservados',
+                child: Text(AppLocalizations.of(context).footer,
                     style: TextStyle(color: Colors.grey, fontSize: 12.0))),
           ],
         ),

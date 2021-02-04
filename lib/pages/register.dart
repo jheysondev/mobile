@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:nextchat/pages/login.dart';
 import 'package:nextchat/widgets/nextchat.dart';
 import 'package:nextchat/widgets/chat_input.dart';
@@ -27,7 +28,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   tag: 'top_button',
                   child: ChatButton(
                     type: ChatButtonType.text,
-                    text: 'Inicia Sesión',
+                    text: AppLocalizations.of(context).register_top_button,
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (_) {
                         return LoginPage();
@@ -49,24 +50,25 @@ class _RegisterPageState extends State<RegisterPage> {
                       child: NextChat(
                           size: 48.0, margin: EdgeInsets.only(bottom: 32.0))),
                   ChatInput(
-                      text: 'Nombre de usuario',
+                      text: AppLocalizations.of(context).form_username,
                       margin: EdgeInsets.only(bottom: 16.0)),
                   ChatInput(
                       type: ChatInputType.password,
-                      text: 'Contraseña',
+                      text: AppLocalizations.of(context).form_password,
                       margin: EdgeInsets.only(bottom: 16.0)),
                   ChatInput(
                       type: ChatInputType.text,
-                      text: 'Repite la contraseña',
+                      text:
+                          AppLocalizations.of(context).register_repeat_password,
                       margin: EdgeInsets.only(bottom: 16.0)),
                   ChatInput(
                       type: ChatInputType.text,
-                      text: 'Captcha: ¿Cuánto es 2 + 2?'),
+                      text: AppLocalizations.of(context).register_captcha),
                   Hero(
                       tag: 'submit_button',
                       child: ChatButton(
                           type: ChatButtonType.primary,
-                          text: 'Finalizar',
+                          text: AppLocalizations.of(context).register_submit,
                           onPressed: () {},
                           margin: EdgeInsets.only(top: 16.0)))
                 ],
@@ -74,7 +76,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             Hero(
                 tag: 'footer',
-                child: Text('© NexChat 2021 ~ Todos los derechos reservados',
+                child: Text(AppLocalizations.of(context).footer,
                     style: TextStyle(color: Colors.grey, fontSize: 12.0))),
           ],
         ),
