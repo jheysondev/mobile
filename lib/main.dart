@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nextchat/pages/login.dart';
+import 'package:nextchat/pages/loader.dart';
 
 void main() {
   runApp(NextChat());
@@ -13,7 +13,7 @@ class NextChat extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: LoginPage(),
+      home: LoaderPage(),
     );
   }
 }

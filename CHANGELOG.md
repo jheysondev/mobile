@@ -3,6 +3,7 @@
 ## Unreleased
 
 ## 03/02/2021
+-   Add `loader` page.
 -   Add navigation between login and register.
 -   Change app icon and display name (Android).
 -   Add `register` page.
