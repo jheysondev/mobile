@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+enum ChatInputType { text, password }
+
+class ChatInput extends StatelessWidget {
+  ChatInput(
+      {Key key,
+      this.type = ChatInputType.text,
+      @required this.text,
+      this.margin = const EdgeInsets.all(0.0)})
+      : super(key: key);
+
+  final ChatInputType type;
+  final String text;
+  final EdgeInsetsGeometry margin;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: this.margin,
+      child: TextField(
+        obscureText: this.type == ChatInputType.password,
+        decoration: InputDecoration(
+            contentPadding:
+                EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            labelText: this.text,
+            border: OutlineInputBorder()),
+      ),
+    );
+  }
+}
