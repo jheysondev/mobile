@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nextchat/websocket.dart';
 import 'package:nextchat/widgets/auth/userdata.dart';
 import 'package:nextchat/widgets/chat_button.dart';
+import 'package:nextchat/widgets/bottom_navigation.dart';
 import 'package:nextchat/database.dart';
 import 'package:nextchat/models/user.dart';
 import 'package:nextchat/pages/loader.dart';
@@ -55,6 +56,7 @@ class _HomePageState extends State<HomePage> {
           return Text('Error');
         },
       ),
+      bottomNavigationBar: BottomNavigation(currentIndex: 0),
     );
   }
 }
