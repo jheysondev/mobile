@@ -8,7 +8,8 @@ Future<void> post<T>(String path,
     {@required Map<String, dynamic> body,
     void Function(int statusCode, Map<String, dynamic> data) onError,
     void Function(Map<String, dynamic> data) onSuccess}) async {
-  http.Response response = await http.post(Uri.http(API_URL, path),
+  print(Uri.http(API_URL, 'v$API_VERSION/$path'));
+  http.Response response = await http.post(Uri.http(API_URL, 'v$API_VERSION/$path'),
       headers: {'Content-Type': "application/json"}, body: jsonEncode(body));
 
   Map<String, dynamic> data = new Map();

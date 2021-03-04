@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+## 04/03/2021
+-   Adjust code to the new API.
+
 ## 12/02/2021
 -   Add `UserData` widget.
 -   Add `WebSocketHelper` class.

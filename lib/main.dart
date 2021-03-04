@@ -3,10 +3,10 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:nextchat/pages/loader.dart';
 
 void main() {
-  runApp(NextChat());
+  runApp(NextChatApp());
 }
 
-class NextChat extends StatelessWidget {
+class NextChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

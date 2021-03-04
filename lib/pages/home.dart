@@ -26,8 +26,6 @@ class _HomePageState extends State<HomePage> {
         child: (UserAccount me, WebSocketChannel channel) {
           String username = me.username;
 
-          channel.sink.add('/connection $username');
-
           return Container(
             width: double.infinity,
             child: Column(

@@ -16,7 +16,8 @@ class WebSocketHelper {
       UserAccount me = await _database.getCurrentAccount();
       String userID = me.id;
       _channel =
-          IOWebSocketChannel.connect('ws://$API_URL/ws/?user_id=$userID');
+          IOWebSocketChannel.connect('ws://$API_URL/v$API_VERSION/ws/?user_id=$userID');
+      _channel.sink.add('/connection');
     }
 
     return _channel;

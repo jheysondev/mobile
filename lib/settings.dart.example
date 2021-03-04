@@ -1,2 +1,4 @@
 // Change this by your api url (Remember, don't use localhost in production mode).
 const API_URL = "localhost:5000";
+
+const API_VERSION = "1";
