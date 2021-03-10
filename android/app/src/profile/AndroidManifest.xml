@@ -1,4 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.nextchat.mobile">
+    package="org.nextchat.nextchat">
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

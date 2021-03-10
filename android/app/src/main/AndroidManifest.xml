@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.nextchat.mobile">
+    package="org.nextchat.nextchat">
    <application
         android:label="NextChat"
         android:icon="@mipmap/ic_launcher"

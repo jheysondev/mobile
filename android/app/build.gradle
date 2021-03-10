@@ -33,7 +33,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.nextchat.mobile"
+        applicationId "org.nextchat.nextchat"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
