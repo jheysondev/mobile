@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+## 10/03/2021
+-   Remove `/vX.X.X` of the API request url.
+
 ## 04/03/2021
 -   Adjust code to the new API.
 
