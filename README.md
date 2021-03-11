@@ -23,6 +23,10 @@ flutter run
 adb reverse tcp:5000 tcp:5000
 ```
 
+## Preview
+
+![Welcome screen](./preview/welcome_screen.jpg) ![Sign In Screen](./preview/sign_in_screen.jpg) ![Sign Up Screen](./preview/sign_up_screen.jpg)
+
 ## Authors
 -   [@danielsolartech](https://github.com/danielsolartech) - Initial project
 -   [@JheysonDev](https://github.com/JheysonDev) - Icon Design
