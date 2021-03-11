@@ -1,6 +1,28 @@
 # NextChat Mobile
 This repository contains the source code of the mobile application for NextChat written with Flutter.
 
+## Getting Started
+1. Clone this repository:
+```sh
+git clone https://github.com/NextChatORG/mobile.git
+```
+Or using GitHub CLI:
+```sh
+gh repo clone NextChatORG/mobile
+```
+
+2. Create the `lib/settings.dart` file based on `lib/settings.dart.example` file.
+
+3. Execute the code:
+```sh
+flutter run
+```
+
+4. (Optional) Configure the reverse TCP port connection if you use `localhost` as API host:
+```sh
+adb reverse tcp:5000 tcp:5000
+```
+
 ## Authors
 -   [@danielsolartech](https://github.com/danielsolartech) - Initial project
 -   [@JheysonDev](https://github.com/JheysonDev) - Icon Design
