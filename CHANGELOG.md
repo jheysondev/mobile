@@ -2,6 +2,10 @@
 
 ## Unreleased (0.1.0-alpha1)
 
+### 12/03/2021
+-   Fix `SignInScreen` and `SignUpScreen` scroll issue.
+-   Add `LayoutComponent` to SignInOrSignUp screens.
+
 ### 11/03/2021
 -   Add `HomeScreen`, `MessagesScreen`, `NotificationsScreen` and `ProfileScreen` screens.
 -   Add `LoggedWidget` and `NavigationWidget` widgets.
