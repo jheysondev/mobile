@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased
+## Unreleased (0.1.0-alpha1)
 
 ### 11/03/2021
+-   Add `HomeScreen`, `MessagesScreen`, `NotificationsScreen` and `ProfileScreen` screens.
+-   Add `LoggedWidget` and `NavigationWidget` widgets.
 -   Add preview images.
 -   Sign in and Sign up redesign.
 
