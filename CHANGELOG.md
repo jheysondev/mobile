@@ -1,26 +1,35 @@
 # Changelog
 
-## Unreleased
+## Unreleased (0.1.0-alpha1)
 
-## 04/03/2021
+### 11/03/2021
+-   Add `HomeScreen`, `MessagesScreen`, `NotificationsScreen` and `ProfileScreen` screens.
+-   Add `LoggedWidget` and `NavigationWidget` widgets.
+-   Add preview images.
+-   Sign in and Sign up redesign.
+
+### 10/03/2021
+-   Remove `/vX.X.X` of the API request url.
+
+### 04/03/2021
 -   Adjust code to the new API.
 
-## 12/02/2021
+### 12/02/2021
 -   Add `UserData` widget.
 -   Add `WebSocketHelper` class.
 
-## 10/02/2021
+### 10/02/2021
 -   Add register and login on submit action.
 -   Add `UserAccount` model.
 -   Add `sqlite`.
 -   Add `requests` utils.
 -   Add `settings.dart` file.
 
-## 04/02/2021
+### 04/02/2021
 -   Remove `Hero` widgets.
 -   Add internalization (`en` and `es`).
 
-## 03/02/2021
+### 03/02/2021
 -   Add `loader` page.
 -   Add navigation between login and register.
 -   Change app icon and display name (Android).
