@@ -28,7 +28,7 @@ class _NavigationWidgetState extends State<NavigationWidget> {
   @override
   Widget build(BuildContext context) {
     Navigator.popUntil(context, (route) {
-      String path = route.settings.name;
+      String? path = route.settings.name;
 
       if (routes.containsValue(path)) {
         routes.forEach((key, value) {
@@ -75,7 +75,7 @@ class _NavigationWidgetState extends State<NavigationWidget> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(14.0)),
               boxShadow: [
-                BoxShadow(color: Colors.indigo[200], spreadRadius: 2, blurRadius: 4),
+                BoxShadow(color: Colors.indigo[200]!, spreadRadius: 2, blurRadius: 4),
               ],
             ),
             clipBehavior: Clip.antiAlias,
@@ -97,7 +97,7 @@ class _NavigationWidgetState extends State<NavigationWidget> {
       selectedItemColor: Colors.indigo,
       onTap: (int index) {
         if (routes.containsKey(index)) {
-          Navigator.of(context).pushNamed(routes[index]);
+          Navigator.of(context).pushNamed(routes[index]!);
           changeIndexState(index);
         }
       },

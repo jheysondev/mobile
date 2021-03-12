@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LoggedWidget extends StatelessWidget {
-  LoggedWidget({Key key, this.children}) : super(key: key);
-  final List<Widget> children;
+  LoggedWidget({Key? key, this.children}) : super(key: key);
+  final List<Widget>? children;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class LoggedWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              ...this.children,
+              ...this.children!,
             ],
           ),
         ),
